@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed; 
+    height: 110px;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 0px 20px; 
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 140px; 
+    height: 140px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2em; 
+    margin: 0;
+    font-weight: bold;
+    color: white;
+} 
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-link {
+    color: white;
+    background-color: #28A745; 
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #28A745; 
+}
+
+.navbar-link:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-link:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team {
+    margin-top: 5%;
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    height: 70vh;
+}
+
+.team h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+}
+
+.team-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px; /* Set a width for cards */
+    text-align: center;
+}
+
+.team-member-photo {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+.team-card h3 {
+    margin: 10px 0; /* Margin above and below names */
+    font-size: 1.5em;
+}
+
+.team-card p {
+    margin: 5px 0; /* Margin for paragraph spacing */
+    font-size: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}

@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed; 
+    height: 110px;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; 
+    padding: 0px 20px; 
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 140px; 
+    height: 140px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2em; 
+    margin: 0;
+    font-weight: bold;
+    color: white;
+} 
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-link {
+    color: white;
+    background-color: #28A745; 
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #28A745; 
+}
+
+.navbar-link:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-link:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/image1.jpg'); /* Adjusted path */
+    /* background-image: url('C:/Users/bryel/Documents/College/Courses/Year 2/Database and Web Services/Project/Webpage/Version 3/Images/image1.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h2, .hero p {
+    margin: 0 0 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* About and Services Section Combined */
+.about-services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+    background-image: url('../Images/Image1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px;
+}
+
+.about-services .content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+}
+
+.about-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-services p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Service Cards */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    text-align: center;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Maintenance Section */
+.maintenance {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/Image2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px;
+}
+
+.maintenance h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.maintenance p{
+
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.maintenance .content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}

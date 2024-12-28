@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    height: 110px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0px 20px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar-link {
+    color: white;
+    background-color: #28A745;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #28A745;
+}
+
+.navbar-link:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-link:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Maintenance Section */
+.maintenance {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background */
+    margin-top: 5%;
+}
+
+.maintenance h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Query Section */
+.query-section {
+    margin: 70px auto 50px;  /* Added space at the top */
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background-color: #f0f0f0;  /* A different shade of white */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.query-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Heading for Search Queries */
+.query-title {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Form Styles */
+.query-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.query-section input[type="text"],
+.query-section input[type="date"],
+.query-section select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.query-section input[type="submit"] {
+    background-color: #28A745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.query-section input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Results Section */
+.results {
+    margin: 150px auto 50px;  /* Creates space below the header */
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table */
+}
+
+.results th, .results td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.results th {
+    background-color: #28A745;
+    color: white;
+}
+
+.results td {
+    background-color: #f9f9f9;
+}
+
+.results tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}

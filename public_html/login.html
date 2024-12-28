@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="logo.png" alt="SHMACK Logo" class="logo">
+                <h1>SHMACK</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                    <li class="navbar-item"><a href="imprint.html" class="navbar-link">Imprint</a></li>
+                    <li class="navbar-item"><a href="services.html" class="navbar-link">Services</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact Us</a></li>
+                    <li class="navbar-item"><a href="login.html" class="navbar-link">Maintenance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="authenticate.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SHMACK. All rights reserved.</p>
+        <a href="imprint.html">Imprint</a>
+    </footer>
+</body>
+</html>
